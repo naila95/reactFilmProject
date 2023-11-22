@@ -1,0 +1,31 @@
+.comingSoonSection {
+  background-image: url(/src/assets/hero-whats-on.jpg);
+  height: 27.2rem;
+  padding: 3rem 8rem;
+  margin-bottom: 8rem;
+}
+
+.comingSoonSectionHeading {
+  color: #ec7532;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-weight: 300;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.comingSoonSectionHeading::after {
+  position: absolute;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 4px;
+  content: "";
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 20px 0 #fbbd61;
+  background: linear-gradient(to right, #ec7532 0%, #fbbd61 100%);
+}

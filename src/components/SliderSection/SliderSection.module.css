@@ -1,0 +1,51 @@
+.slider1 {
+  background-image: url(/src/assets/hero.jpg);
+  height: 40rem;
+  padding: 12rem 8rem;
+}
+
+.slider2 {
+  background-image: url(/src/assets/hero-2-1.jpg);
+  height: 40rem;
+  padding: 12rem 8rem;
+}
+
+.slider3 {
+  background-image: url(/src/assets/hero-2.jpg);
+  height: 40rem;
+  padding: 12rem 8rem;
+}
+
+.action {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fbbd61;
+  font-weight: 400;
+}
+
+.heading {
+  font-size: 52px;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 300;
+  padding-bottom: 1rem;
+}
+
+.content {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btnPlay {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 13px;
+  background: linear-gradient(to right, #ec7532 0%, #fbbd61 100%);
+}

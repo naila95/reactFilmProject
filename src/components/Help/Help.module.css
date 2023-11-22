@@ -1,0 +1,13 @@
+.helpHeading {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.helpContext {
+  text-align: center;
+  color: #ec7532;
+  font-size: 46px;
+}

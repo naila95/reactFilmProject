@@ -1,0 +1,48 @@
+.newSection {
+  padding: 8rem;
+}
+
+.newSectionHeading {
+  color: #ec7532;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-weight: 300;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.newSectionHeading::after {
+  position: absolute;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 120px;
+  height: 4px;
+  content: "";
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0 20px 0 #fbbd61;
+  background: linear-gradient(to right, #ec7532 0%, #fbbd61 100%);
+}
+
+.sectionMain {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.col {
+  width: 22%;
+}
+
+.filmName {
+  font-size: 18px;
+  color: #4a4a4a;
+  letter-spacing: 2px;
+  font-weight: 200;
+  text-align: center;
+  margin: 1rem 0;
+}
