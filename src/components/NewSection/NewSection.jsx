@@ -17,23 +17,29 @@ export default function NewSection() {
         <div className="w-1/5 me-7">
           <img className="rounded-lg" src={img} />
           <h4 className={classes.filmName}>Daylight</h4>
-          <Space>
-            <Rate tooltips={desc} onChange={setValue} value={value} />
-          </Space>
+          <div className="text-center">
+            <Space>
+              <Rate tooltips={desc} onChange={setValue} value={value} />
+            </Space>
+          </div>
         </div>
         <div className="w-1/5 me-7">
           <img className="rounded-lg" src={img2} />
           <h4 className={classes.filmName}>The end of days</h4>
-          <Space>
-            <Rate tooltips={desc} onChange={setValue} value={value} />
-          </Space>
+          <div className="text-center">
+            <Space>
+              <Rate tooltips={desc} onChange={setValue} value={value} />
+            </Space>
+          </div>
         </div>
         <div className="w-1/5 me-7">
           <img className="rounded-lg" src={img3} />
           <h4 className={classes.filmName}>Locked in</h4>
-          <Space>
-            <Rate tooltips={desc} onChange={setValue} value={value} />
-          </Space>
+          <div className="text-center">
+            <Space>
+              <Rate tooltips={desc} onChange={setValue} value={value} />
+            </Space>
+          </div>
         </div>
       </div>
     </section>

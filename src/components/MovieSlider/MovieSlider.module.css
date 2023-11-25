@@ -1,20 +1,18 @@
-.swiper {
+.imgHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.8;
   width: 100%;
   height: 100%;
+  transition: all 300ms ease;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.movieSlide {
+  position: relative;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.movieSlide:hover .imgHover {
+  opacity: 0;
 }
