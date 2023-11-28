@@ -78,8 +78,8 @@
 }
 
 .productImg {
-  height: 190px;
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
 }
 
 .movieInfo {

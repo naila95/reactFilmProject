@@ -1,11 +1,11 @@
 import React from "react";
-import img from "../../assets/movie-3.jpg";
-import img2 from "../../assets/movie-10.jpg";
-import img3 from "../../assets/movie-12.jpg";
-import img4 from "../../assets/movie-13.jpg";
-import img5 from "../../assets/movie-14.jpg";
-import img6 from "../../assets/movie-15.jpg";
-import img7 from "../../assets/movie-16.jpg";
+import img from "../../../../assets/movie-3.jpg";
+import img2 from "../../../../assets/movie-10.jpg";
+import img3 from "../../../../assets/movie-12.jpg";
+import img4 from "../../../../assets/movie-13.jpg";
+import img5 from "../../../../assets/movie-14.jpg";
+import img6 from "../../../../assets/movie-15.jpg";
+import img7 from "../../../../assets/movie-16.jpg";
 import classes from "./MovieSlider.module.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 

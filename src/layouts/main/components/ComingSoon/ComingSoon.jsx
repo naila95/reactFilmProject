@@ -1,13 +1,17 @@
 import React, { useRef } from "react";
 import classes from "./ComingSoon.module.css";
+import { Link } from "react-router-dom";
+import { Pagination } from "antd";
 
-export default function ComingSoon({ data, query, setQuery }) {
+export default function ComingSoon({ data, setQuery, setPage }) {
   const inpRef = useRef(null);
   const submitHandler = (e) => {
     e.preventDefault();
     setQuery(inpRef.current.value);
   };
-
+  const onPaginate = (pageNumber) => {
+    setPage(pageNumber);
+  };
   return (
     <section className={classes.comingSoonSection}>
       <div className={classes.sectionHeading}>
@@ -24,36 +28,47 @@ export default function ComingSoon({ data, query, setQuery }) {
         </div>
       </div>
       <div className="flex flex-col gap-8">
-        {data.map((product) => {
-          if (product.backdrop_path) {
+        {data.map((movie) => {
+          if (movie.backdrop_path) {
             return (
-              <div className="flex mt-[20px]">
-                <img
-                  className={classes.productImg}
-                  src={
-                    "https://image.tmdb.org/t/p/w500" + product.backdrop_path
-                  }
-                  alt=""
-                />
-                <div className="ml-4">
+              <div key={movie.id} className="flex mt-[20px]">
+                <Link to={`/home/${movie.id}`} className="w-[300px]">
+                  <img
+                    className={classes.productImg}
+                    src={
+                      "https://image.tmdb.org/t/p/w500" + movie.backdrop_path
+                    }
+                  />
+                </Link>
+                <div className="ml-4 w-[70%]">
                   <h3 className={classes.genre}></h3>
-                  <h1 className={classes.movieName}>{product.title}</h1>
-                  <p className={classes.movieInfo}>{product.overview}</p>
+                  <h1 className={classes.movieName}>{movie.title}</h1>
+                  <p className={classes.movieInfo}>{movie.overview}</p>
                   <p className={classes.movieLan}>
                     LANGUAGE:
                     <span className={classes.time}>
-                      {product.original_language}
+                      {movie.original_language}
                     </span>
                   </p>
                   <p className={classes.movieLan}>
                     DATE:
-                    <span className={classes.time}>{product.release_date}</span>
+                    <span className={classes.time}>{movie.release_date}</span>
                   </p>
                 </div>
               </div>
             );
           }
         })}
+      </div>
+      <div className="flex justify-center">
+        <Pagination
+          defaultPageSize={20}
+          onChange={onPaginate}
+          className="mt-8"
+          defaultCurrent={1}
+          total={10000}
+          showSizeChanger={false}
+        />
       </div>
     </section>
   );

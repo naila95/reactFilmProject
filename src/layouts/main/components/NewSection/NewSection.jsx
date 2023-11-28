@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./NewSection.module.css";
-import img from "../../assets/movie-7-270x340.jpg";
-import img2 from "../../assets/thumb1-270x340.jpg";
-import img3 from "../../assets/thumb2-270x340.jpg";
+import img from "../../../../assets/movie-7-270x340.jpg";
+import img2 from "../../../../assets/thumb1-270x340.jpg";
+import img3 from "../../../../assets/thumb2-270x340.jpg";
 import { useState } from "react";
 import { Space, Rate } from "antd";
 
